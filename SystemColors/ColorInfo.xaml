@@ -18,6 +18,6 @@
         <Rectangle Fill="{Binding Color, Converter={StaticResource ColorToBrushConverter}, Mode=OneWay}" MinHeight="40" MinWidth="300" x:Name="rect"/>
         <TextBlock Width="300" RelativePanel.RightOf="rect" Margin="8, 8, 0, 0"  Grid.Row="1" Text="{Binding ColorName}" x:Name="colorNameTextBlock" />
         <TextBlock RelativePanel.RightOf="colorNameTextBlock" Margin="8, 8, 0, 0" Text="{Binding Color, Converter={StaticResource ColorToHexStringConverter}, Mode=OneWay}" x:Name="colorHexCodeTextBlock" />
-        <Button RelativePanel.RightOf="colorHexCodeTextBlock" Margin="8, 0, 0, 0" x:Name="CopyColorButton" Click="CopyColorButton_Click">Copy</Button>
+        <Button RelativePanel.RightOf="colorHexCodeTextBlock" Margin="8, 0, 0, 0" x:Name="CopyColorButton" Click="CopyColorButton_Click">Copy to Clipboard</Button>
     </RelativePanel>
 </UserControl>

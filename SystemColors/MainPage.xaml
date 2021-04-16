@@ -16,7 +16,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Button Margin="12, 12, 12, 24" Click="ExportButton_Click">Export</Button>
+        <Button Margin="12, 12, 12, 24" Click="ExportAccentButton_Click">Export accent color</Button>
         <ListView Grid.Row="1" SelectionMode="None">
             <ListView.Items>
                 <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColor}" ColorName="SystemAccentColor"></local:ColorInfo>
