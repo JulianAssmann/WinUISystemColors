@@ -1,0 +1,122 @@
+﻿<Page
+    x:Class="SystemColors.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SystemColors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <local:ColorToHexStringConverter x:Key="ColorToHexStringConverter" />
+        <local:ColorToBrushConverter x:Key="ColorToBrushConverter" />
+    </Page.Resources>
+    <Grid Margin="20, 0, 0, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Margin="12, 12, 12, 24" Click="ExportButton_Click">Export</Button>
+        <ListView Grid.Row="1" SelectionMode="None">
+            <ListView.Items>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColor}" ColorName="SystemAccentColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorDark1}" ColorName="SystemAccentColorDark1"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorDark2}" ColorName="SystemAccentColorDark2"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorDark3}" ColorName="SystemAccentColorDark3"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorLight1}" ColorName="SystemAccentColorLight1"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorLight2}" ColorName="SystemAccentColorLight2"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAccentColorLight3}" ColorName="SystemAccentColorLight3"></local:ColorInfo>
+                
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAltHighColor}" ColorName="SystemAltHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAltMediumHighColor}" ColorName="SystemAltMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAltMediumColor}" ColorName="SystemAltMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAltMediumLowColor}" ColorName="SystemAltMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemAltLowColor}" ColorName="SystemAltLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemBaseHighColor}" ColorName="SystemBaseHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemBaseMediumHighColor}" ColorName="SystemBaseMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemBaseMediumColor}" ColorName="SystemBaseMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemBaseMediumLowColor}" ColorName="SystemBaseMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemBaseLowColor}" ColorName="SystemBaseLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeLowColor}" ColorName="SystemChromeLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumLowColor}" ColorName="SystemChromeMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumColor}" ColorName="SystemChromeMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumHighColor}" ColorName="SystemChromeMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeHighColor}" ColorName="SystemChromeHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeWhiteColor}" ColorName="SystemChromeWhiteColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeGrayColor}" ColorName="SystemChromeGrayColor"></local:ColorInfo>
+                
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeAltHighColor}" ColorName="SystemChromeAltHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeAltMediumHighColor}" ColorName="SystemChromeAltMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeAltLowColor}" ColorName="SystemChromeAltLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeBlackMediumLowColor}" ColorName="SystemChromeBlackMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeBlackLowColor}" ColorName="SystemChromeBlackLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeBlackMediumColor}" ColorName="SystemChromeBlackMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeBlackHighColor}" ColorName="SystemChromeBlackHighColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeDisabledHighColor}" ColorName="SystemChromeDisabledHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeDisabledLowColor}" ColorName="SystemChromeDisabledLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeGrayColor}" ColorName="SystemChromeGrayColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeHighColor}" ColorName="SystemChromeHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeLowColor}" ColorName="SystemChromeLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumColor}" ColorName="SystemChromeMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumHighColor}" ColorName="SystemChromeMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeMediumLowColor}" ColorName="SystemChromeMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemChromeWhiteColor}" ColorName="SystemChromeWhiteColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorActiveCaptionColor}" ColorName="SystemColorActiveCaptionColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorBackgroundColor}" ColorName="SystemColorBackgroundColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorButtonFaceColor}" ColorName="SystemColorButtonFaceColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorButtonTextColor}" ColorName="SystemColorButtonTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorCaptionTextColor}" ColorName="SystemColorCaptionTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorControlAccentColor}" ColorName="SystemColorControlAccentColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorDisabledTextColor}" ColorName="SystemColorDisabledTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorGrayTextColor}" ColorName="SystemColorGrayTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorHighlightColor}" ColorName="SystemColorHighlightColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorHotlightColor}" ColorName="SystemColorHotlightColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorInactiveCaptionColor}" ColorName="SystemColorInactiveCaptionColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorInactiveCaptionTextColor}" ColorName="SystemColorInactiveCaptionTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorWindowColor}" ColorName="SystemColorWindowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemColorWindowTextColor}" ColorName="SystemColorWindowTextColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemErrorTextColor}" ColorName="SystemErrorTextColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemListAccentHighColor}" ColorName="SystemListAccentHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemListAccentLowColor}" ColorName="SystemListAccentLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemListAccentMediumColor}" ColorName="SystemListAccentMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemListLowColor}" ColorName="SystemListLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemListMediumColor}" ColorName="SystemListMediumColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealAltHighColor}" ColorName="SystemRevealAltHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealAltMediumHighColor}" ColorName="SystemRevealAltMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealAltMediumColor}" ColorName="SystemRevealAltMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealAltMediumLowColor}" ColorName="SystemRevealAltMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealAltLowColor}" ColorName="SystemRevealAltLowColor"></local:ColorInfo>
+                
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealBaseHighColor}" ColorName="SystemRevealBaseHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealBaseMediumHighColor}" ColorName="SystemRevealBaseMediumHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealBaseMediumColor}" ColorName="SystemRevealBaseMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealBaseMediumLowColor}" ColorName="SystemRevealBaseMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealBaseLowColor}" ColorName="SystemRevealBaseLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeWhiteColor}" ColorName="SystemRevealChromeWhiteColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeGrayColor}" ColorName="SystemRevealChromeGrayColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeBlackHighColor}" ColorName="SystemRevealChromeBlackHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeBlackMediumColor}" ColorName="SystemRevealChromeBlackMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeBlackMediumLowColor}" ColorName="SystemRevealChromeBlackMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeBlackLowColor}" ColorName="SystemRevealChromeBlackMediumLowColor"></local:ColorInfo>
+
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeHighColor}" ColorName="SystemRevealChromeHighColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeMediumColor}" ColorName="SystemRevealChromeMediumColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeMediumLowColor}" ColorName="SystemRevealChromeMediumLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealChromeLowColor}" ColorName="SystemRevealChromeLowColor"></local:ColorInfo>
+                
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealListLowColor}" ColorName="SystemRevealListLowColor"></local:ColorInfo>
+                <local:ColorInfo Margin="0, 0, 0, 20" Color="{ThemeResource SystemRevealListMediumColor}" ColorName="SystemRevealListMediumColor"></local:ColorInfo>
+            </ListView.Items>
+        </ListView>
+    </Grid>
+    
+</Page>
